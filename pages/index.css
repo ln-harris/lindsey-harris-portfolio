@@ -1,0 +1,22 @@
+@import url("../blocks/variables.css");
+@import url("../blocks/base.css");
+
+@import url("../blocks/background.css");
+@import url("../blocks/cursor.css");
+
+@import url("../blocks/page.css");
+@import url("../blocks/nav.css");
+@import url("../blocks/hero.css");
+
+@import url("../blocks/sections.css");
+
+@import url("../blocks/skills.css");
+@import url("../blocks/certifications.css");
+@import url("../blocks/projects.css");
+@import url("../blocks/about.css");
+@import url("../blocks/contact.css");
+@import url("../blocks/about-me.css");
+@import url("../blocks/footer.css");
+
+@import url("../blocks/animations.css");
+@import url("../blocks/responsive.css");
