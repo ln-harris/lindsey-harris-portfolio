@@ -1,7 +1,11 @@
 // ==========================================
 // ROTATING TEXT IN HERO
 // ==========================================
-const words = ["Full-Stack Developer", "AI Integration Specialist"];
+const words = [
+  "Full-Stack Developer",
+  "Interactive Web Apps",
+  "AI-Enhanced Workflow",
+];
 let wordIndex = 0;
 const rotatingWord = document.querySelector(".rotating-word");
 
@@ -411,6 +415,6 @@ console.log(
   "font-size: 14px; color: #8b5cf6;",
 );
 console.log(
-  "%c🚀 Built with vanilla JS, CSS, and lots of ☕",
+  "%c🚀 Built with JS, CSS, and lots of ☕",
   "font-size: 12px; color: #cbd5e1;",
 );
