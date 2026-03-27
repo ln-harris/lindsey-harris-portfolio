@@ -35,11 +35,6 @@
   color: var(--accent-primary);
 }
 
-.logo-accent {
-  color: var(--accent-primary);
-  font-size: 2rem;
-}
-
 .nav__links {
   display: flex;
   gap: 2.5rem;
