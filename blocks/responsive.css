@@ -27,6 +27,10 @@
 }
 
 @media (max-width: 768px) {
+  .theme-toggle-label {
+    display: none;
+  }
+
   .nav__links {
     position: fixed;
     top: 80px;

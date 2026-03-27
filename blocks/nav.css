@@ -41,6 +41,27 @@
   list-style: none;
 }
 
+.nav__actions {
+  display: flex;
+  align-items: center;
+  gap: 0.9rem;
+}
+
+.theme-toggle-label {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: var(--nav-bar);
+  font-size: 0.95rem;
+  font-weight: 500;
+  white-space: nowrap;
+}
+
+.theme-toggle-label i {
+  font-size: 0.85rem;
+  color: var(--accent-primary);
+}
+
 .nav__link {
   color: var(--nav-bar);
   text-decoration: none;

@@ -54,9 +54,14 @@
           <li><a class="nav__link" href="#about">About</a></li>
           <li><a class="nav__link" href="#contact">Contact</a></li>
         </ul>
-        <button class="theme-toggle" id="themeToggle">
-          <i class="fas fa-moon"></i>
-        </button>
+        <div class="nav__actions">
+          <span class="theme-toggle-label">
+            Try Light Mode <i class="fas fa-arrow-right"></i>
+          </span>
+          <button class="theme-toggle" id="themeToggle">
+            <i class="fas fa-moon"></i>
+          </button>
+        </div>
       </nav>
 
       <!-- Hero Section -->
@@ -306,6 +311,95 @@
               <div class="project__carousel-track">
                 <img
                   class="project__image is-active"
+                  src="./images/wtwr-desktop.png"
+                  alt="WTWR desktop view"
+                />
+                <img
+                  class="project__image"
+                  src="./images/wtwr-addmodal.png"
+                  alt="WTWR add clothing modal"
+                />
+                <img
+                  class="project__image"
+                  src="./images/wtwr-prevmodal.png"
+                  alt="WTWR clothing preview modal"
+                />
+              </div>
+              <button
+                class="project__carousel-btn project__carousel-btn--prev"
+                type="button"
+                aria-label="Previous project image"
+                data-carousel-prev
+              >
+                <i class="fas fa-chevron-left"></i>
+              </button>
+              <button
+                class="project__carousel-btn project__carousel-btn--next"
+                type="button"
+                aria-label="Next project image"
+                data-carousel-next
+              >
+                <i class="fas fa-chevron-right"></i>
+              </button>
+              <div class="project__carousel-dots" aria-label="Project images">
+                <button
+                  class="project__carousel-dot is-active"
+                  type="button"
+                  aria-label="Show project image 1"
+                  data-carousel-dot="0"
+                ></button>
+                <button
+                  class="project__carousel-dot"
+                  type="button"
+                  aria-label="Show project image 2"
+                  data-carousel-dot="1"
+                ></button>
+                <button
+                  class="project__carousel-dot"
+                  type="button"
+                  aria-label="Show project image 3"
+                  data-carousel-dot="2"
+                ></button>
+              </div>
+            </div>
+            <div class="project__content">
+              <h3 class="project__title">WTWR</h3>
+              <p class="project__description">
+                WTWR, short for "What to Wear," is a weather-based clothing app
+                that shows the current temperature for a user's location and
+                suggests clothing based on hot, warm, or cold conditions
+                through a clean React interface.
+              </p>
+              <div class="project__tech">
+                <span class="tech-tag react">React</span>
+                <span class="tech-tag">Vite</span>
+                <span class="tech-tag js">JavaScript</span>
+                <span class="tech-tag css">CSS</span>
+                <span class="tech-tag">OpenWeather API</span>
+                <span class="tech-tag">GitHub Pages</span>
+              </div>
+              <div class="project__links">
+                <span class="project__link disabled">
+                  <i class="fas fa-rocket"></i>
+                  View Live
+                </span>
+                <a
+                  href="https://github.com/ln-harris/se_project_react"
+                  target="_blank"
+                  class="project__link"
+                >
+                  <i class="fab fa-github"></i>
+                  Code
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="project__card animate-on-scroll" style="--delay: 0.2s">
+            <div class="project__image-container" data-carousel>
+              <div class="project__carousel-track">
+                <img
+                  class="project__image is-active"
                   src="./images/spots_desktop.png"
                   alt="Spots desktop view"
                 />
@@ -381,95 +475,6 @@
                 </a>
                 <a
                   href="https://github.com/ln-harris/se_project_spots"
-                  target="_blank"
-                  class="project__link"
-                >
-                  <i class="fab fa-github"></i>
-                  Code
-                </a>
-              </div>
-            </div>
-          </div>
-
-          <div class="project__card animate-on-scroll" style="--delay: 0.2s">
-            <div class="project__image-container" data-carousel>
-              <div class="project__carousel-track">
-                <img
-                  class="project__image is-active"
-                  src="./images/wtwr-desktop.png"
-                  alt="WTWR desktop view"
-                />
-                <img
-                  class="project__image"
-                  src="./images/wtwr-addmodal.png"
-                  alt="WTWR add clothing modal"
-                />
-                <img
-                  class="project__image"
-                  src="./images/wtwr-prevmodal.png"
-                  alt="WTWR clothing preview modal"
-                />
-              </div>
-              <button
-                class="project__carousel-btn project__carousel-btn--prev"
-                type="button"
-                aria-label="Previous project image"
-                data-carousel-prev
-              >
-                <i class="fas fa-chevron-left"></i>
-              </button>
-              <button
-                class="project__carousel-btn project__carousel-btn--next"
-                type="button"
-                aria-label="Next project image"
-                data-carousel-next
-              >
-                <i class="fas fa-chevron-right"></i>
-              </button>
-              <div class="project__carousel-dots" aria-label="Project images">
-                <button
-                  class="project__carousel-dot is-active"
-                  type="button"
-                  aria-label="Show project image 1"
-                  data-carousel-dot="0"
-                ></button>
-                <button
-                  class="project__carousel-dot"
-                  type="button"
-                  aria-label="Show project image 2"
-                  data-carousel-dot="1"
-                ></button>
-                <button
-                  class="project__carousel-dot"
-                  type="button"
-                  aria-label="Show project image 3"
-                  data-carousel-dot="2"
-                ></button>
-              </div>
-            </div>
-            <div class="project__content">
-              <h3 class="project__title">WTWR</h3>
-              <p class="project__description">
-                WTWR, short for "What to Wear," is a weather-based clothing app
-                that shows the current temperature for a user's location and
-                suggests clothing based on hot, warm, or cold conditions
-                through a clean React interface.
-              </p>
-              <div class="project__tech">
-                <span class="tech-tag react">React</span>
-                <span class="tech-tag">Vite</span>
-                <span class="tech-tag js">JavaScript</span>
-                <span class="tech-tag css">CSS</span>
-                <span class="tech-tag">OpenWeather API</span>
-                <span class="tech-tag">GitHub Pages</span>
-              </div>
-              <div class="project__links">
-                <span class="project__link disabled">
-                  <i class="fas fa-rocket"></i>
-                  View Live
-                </span>
-                <a
-                  href="https://github.com/ln-harris/se_project_react"
                   target="_blank"
                   class="project__link"
                 >
