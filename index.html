@@ -237,7 +237,7 @@
         </div>
 
         <div class="certifications__grid">
-          <!-- Certificate 1 -->
+          <!-- Certificate 1
           <div class="cert-card animate-on-scroll" style="--delay: 0.1s">
             <div class="cert-image">
               <img
@@ -261,6 +261,7 @@
               </a>
             </div>
           </div>
+          -->
 
           <!-- Certificate 2 -->
           <div class="cert-card animate-on-scroll" style="--delay: 0.2s">
@@ -300,38 +301,68 @@
         </div>
 
         <div class="projects__grid">
-          <!-- Project Card 1 -->
           <div class="project__card animate-on-scroll" style="--delay: 0.1s">
-            <div class="project__image-container">
-              <div class="project__image-placeholder">
-                <i class="fas fa-image"></i>
-                <span>Project Screenshot</span>
+            <div class="project__image-container" data-carousel>
+              <div class="project__carousel-track">
+                <img
+                  class="project__image is-active"
+                  src="./images/spots_desktop.png"
+                  alt="Spots desktop view"
+                />
+                <img
+                  class="project__image"
+                  src="./images/spots-editmodal.png"
+                  alt="Spots edit profile modal"
+                />
+                <img
+                  class="project__image"
+                  src="./images/spots-previewmodal.png"
+                  alt="Spots preview modal"
+                />
               </div>
-              <div class="project__overlay">
-                <a
-                  href="https://ln-harris.github.io/se_project_spots/"
-                  target="_blank"
-                  class="overlay-btn"
-                >
-                  <i class="fas fa-external-link-alt"></i>
-                  Live Demo
-                </a>
-                <a
-                  href="https://github.com/ln-harris/se_project_spots"
-                  target="_blank"
-                  class="overlay-btn"
-                >
-                  <i class="fab fa-github"></i>
-                  Source Code
-                </a>
+              <button
+                class="project__carousel-btn project__carousel-btn--prev"
+                type="button"
+                aria-label="Previous project image"
+                data-carousel-prev
+              >
+                <i class="fas fa-chevron-left"></i>
+              </button>
+              <button
+                class="project__carousel-btn project__carousel-btn--next"
+                type="button"
+                aria-label="Next project image"
+                data-carousel-next
+              >
+                <i class="fas fa-chevron-right"></i>
+              </button>
+              <div class="project__carousel-dots" aria-label="Project images">
+                <button
+                  class="project__carousel-dot is-active"
+                  type="button"
+                  aria-label="Show project image 1"
+                  data-carousel-dot="0"
+                ></button>
+                <button
+                  class="project__carousel-dot"
+                  type="button"
+                  aria-label="Show project image 2"
+                  data-carousel-dot="1"
+                ></button>
+                <button
+                  class="project__carousel-dot"
+                  type="button"
+                  aria-label="Show project image 3"
+                  data-carousel-dot="2"
+                ></button>
               </div>
             </div>
             <div class="project__content">
-              <h3 class="project__title">Spots Social Media App</h3>
+              <h3 class="project__title">Spots</h3>
               <p class="project__description">
-                A modern social media platform for sharing favorite locations.
-                Features include user authentication, image uploads, and
-                interactive maps.
+                A social media image sharing app with a clean, responsive
+                interface that lets users explore, upload, and interact with
+                visual content.
               </p>
               <div class="project__tech">
                 <span class="tech-tag html">HTML5</span>
@@ -360,64 +391,191 @@
             </div>
           </div>
 
-          <!-- Project Card 2 - Duplicate for now, you can customize -->
           <div class="project__card animate-on-scroll" style="--delay: 0.2s">
-            <div class="project__image-container">
-              <div class="project__image-placeholder">
-                <i class="fas fa-image"></i>
-                <span>Coming Soon</span>
+            <div class="project__image-container" data-carousel>
+              <div class="project__carousel-track">
+                <img
+                  class="project__image is-active"
+                  src="./images/wtwr-desktop.png"
+                  alt="WTWR desktop view"
+                />
+                <img
+                  class="project__image"
+                  src="./images/wtwr-addmodal.png"
+                  alt="WTWR add clothing modal"
+                />
+                <img
+                  class="project__image"
+                  src="./images/wtwr-prevmodal.png"
+                  alt="WTWR clothing preview modal"
+                />
               </div>
-              <div class="project__overlay">
-                <span class="overlay-badge">In Development</span>
+              <button
+                class="project__carousel-btn project__carousel-btn--prev"
+                type="button"
+                aria-label="Previous project image"
+                data-carousel-prev
+              >
+                <i class="fas fa-chevron-left"></i>
+              </button>
+              <button
+                class="project__carousel-btn project__carousel-btn--next"
+                type="button"
+                aria-label="Next project image"
+                data-carousel-next
+              >
+                <i class="fas fa-chevron-right"></i>
+              </button>
+              <div class="project__carousel-dots" aria-label="Project images">
+                <button
+                  class="project__carousel-dot is-active"
+                  type="button"
+                  aria-label="Show project image 1"
+                  data-carousel-dot="0"
+                ></button>
+                <button
+                  class="project__carousel-dot"
+                  type="button"
+                  aria-label="Show project image 2"
+                  data-carousel-dot="1"
+                ></button>
+                <button
+                  class="project__carousel-dot"
+                  type="button"
+                  aria-label="Show project image 3"
+                  data-carousel-dot="2"
+                ></button>
               </div>
             </div>
             <div class="project__content">
-              <h3 class="project__title">E-Commerce Platform</h3>
+              <h3 class="project__title">WTWR</h3>
               <p class="project__description">
-                Full-stack e-commerce solution with product management, shopping
-                cart, and secure checkout functionality.
+                WTWR, short for "What to Wear," is a weather-based clothing app
+                that shows the current temperature for a user's location and
+                suggests clothing based on hot, warm, or cold conditions
+                through a clean React interface.
               </p>
               <div class="project__tech">
                 <span class="tech-tag react">React</span>
-                <span class="tech-tag node">Node.js</span>
-                <span class="tech-tag postgres">PostgreSQL</span>
+                <span class="tech-tag">Vite</span>
+                <span class="tech-tag js">JavaScript</span>
+                <span class="tech-tag css">CSS</span>
+                <span class="tech-tag">OpenWeather API</span>
+                <span class="tech-tag">GitHub Pages</span>
               </div>
               <div class="project__links">
                 <span class="project__link disabled">
-                  <i class="fas fa-clock"></i>
-                  In Progress
+                  <i class="fas fa-rocket"></i>
+                  View Live
                 </span>
+                <a
+                  href="https://github.com/ln-harris/se_project_react"
+                  target="_blank"
+                  class="project__link"
+                >
+                  <i class="fab fa-github"></i>
+                  Code
+                </a>
               </div>
             </div>
           </div>
 
-          <!-- Project Card 3 -->
           <div class="project__card animate-on-scroll" style="--delay: 0.3s">
-            <div class="project__image-container">
-              <div class="project__image-placeholder">
-                <i class="fas fa-image"></i>
-                <span>Coming Soon</span>
+            <div class="project__image-container" data-carousel>
+              <div class="project__carousel-track">
+                <img
+                  class="project__image is-active"
+                  src="./images/tp-main.png"
+                  alt="Triple Peaks main section"
+                />
+                <img
+                  class="project__image"
+                  src="./images/tp-recipe.png"
+                  alt="Triple Peaks recipe section"
+                />
+                <img
+                  class="project__image"
+                  src="./images/tp-book.png"
+                  alt="Triple Peaks booking section"
+                />
+                <img
+                  class="project__image"
+                  src="./images/tp-menu.png"
+                  alt="Triple Peaks menu section"
+                />
               </div>
-              <div class="project__overlay">
-                <span class="overlay-badge">Planning</span>
+              <button
+                class="project__carousel-btn project__carousel-btn--prev"
+                type="button"
+                aria-label="Previous project image"
+                data-carousel-prev
+              >
+                <i class="fas fa-chevron-left"></i>
+              </button>
+              <button
+                class="project__carousel-btn project__carousel-btn--next"
+                type="button"
+                aria-label="Next project image"
+                data-carousel-next
+              >
+                <i class="fas fa-chevron-right"></i>
+              </button>
+              <div class="project__carousel-dots" aria-label="Project images">
+                <button
+                  class="project__carousel-dot is-active"
+                  type="button"
+                  aria-label="Show project image 1"
+                  data-carousel-dot="0"
+                ></button>
+                <button
+                  class="project__carousel-dot"
+                  type="button"
+                  aria-label="Show project image 2"
+                  data-carousel-dot="1"
+                ></button>
+                <button
+                  class="project__carousel-dot"
+                  type="button"
+                  aria-label="Show project image 3"
+                  data-carousel-dot="2"
+                ></button>
+                <button
+                  class="project__carousel-dot"
+                  type="button"
+                  aria-label="Show project image 4"
+                  data-carousel-dot="3"
+                ></button>
               </div>
             </div>
             <div class="project__content">
-              <h3 class="project__title">Task Management App</h3>
+              <h3 class="project__title">Triple Peaks Coffee Shop</h3>
               <p class="project__description">
-                Collaborative task management tool with real-time updates, team
-                collaboration features, and progress tracking.
+                Triple Peaks Coffee Shop is a responsive landing page project
+                created for the TripleTen Software Engineering program using
+                HTML and CSS, based on a provided design brief with custom form
+                elements and interactive visual details.
               </p>
               <div class="project__tech">
-                <span class="tech-tag react">React</span>
-                <span class="tech-tag express">Express</span>
-                <span class="tech-tag websocket">WebSocket</span>
+                <span class="tech-tag html">HTML5</span>
+                <span class="tech-tag css">CSS</span>
+                <span class="tech-tag">Flexbox</span>
+                <span class="tech-tag">BEM</span>
+                <span class="tech-tag">Forms</span>
+                <span class="tech-tag">CSS Animation</span>
               </div>
               <div class="project__links">
                 <span class="project__link disabled">
-                  <i class="fas fa-calendar"></i>
-                  Planned
+                  <i class="fas fa-rocket"></i>
+                  View Live
                 </span>
+                <a
+                  href="https://github.com/ln-harris/se_project_coffeeshop"
+                  target="_blank"
+                  class="project__link"
+                >
+                  <i class="fab fa-github"></i>
+                  Code
+                </a>
               </div>
             </div>
           </div>
@@ -453,8 +611,9 @@
               </p>
 
               <p>
-                I'm currently looking to break into the tech industry and have a
-                change in career. I had always coded for fun, but eventually
+                I'm continuing to grow my career in tech, bringing a mix of
+                analytical thinking, client experience, and hands-on software
+                development. I had always coded for fun, but eventually
                 realized the
                 <span class="highlight">daily problem solving</span> I enjoy as
                 an analyst was similar thinking to a developer. It's not just
@@ -604,14 +763,29 @@
               </a>
             </div>
           </div>
-          <form class="contact__form">
+          <form class="contact__form" novalidate>
             <div class="form-group">
               <label for="name">Name</label>
-              <input type="text" id="name" name="name" required />
+              <input
+                type="text"
+                id="name"
+                name="name"
+                required
+                minlength="2"
+                aria-describedby="name-error"
+              />
+              <span class="form-error" id="name-error" aria-live="polite"></span>
             </div>
             <div class="form-group">
               <label for="email">Email</label>
-              <input type="email" id="email" name="email" required />
+              <input
+                type="email"
+                id="email"
+                name="email"
+                required
+                aria-describedby="email-error"
+              />
+              <span class="form-error" id="email-error" aria-live="polite"></span>
             </div>
             <div class="form-group">
               <label for="message">Message</label>
@@ -620,8 +794,16 @@
                 name="message"
                 rows="5"
                 required
+                minlength="10"
+                aria-describedby="message-error"
               ></textarea>
+              <span
+                class="form-error"
+                id="message-error"
+                aria-live="polite"
+              ></span>
             </div>
+            <p class="form-status" aria-live="polite"></p>
             <button type="submit" class="btn btn-primary">
               <span>Send Message</span>
               <i class="fas fa-paper-plane"></i>
@@ -642,5 +824,10 @@
     </div>
 
     <script src="script.js"></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
+    ></script>
+    <script src="contact-form.js"></script>
   </body>
 </html>

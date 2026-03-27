@@ -153,6 +153,52 @@ document.querySelectorAll(".animate-on-scroll").forEach((el) => {
 });
 
 // ==========================================
+// PROJECT IMAGE CAROUSEL
+// ==========================================
+document.querySelectorAll("[data-carousel]").forEach((carousel) => {
+  const slides = carousel.querySelectorAll(".project__image");
+  const dots = carousel.querySelectorAll("[data-carousel-dot]");
+  const prevButton = carousel.querySelector("[data-carousel-prev]");
+  const nextButton = carousel.querySelector("[data-carousel-next]");
+
+  if (!slides.length) return;
+
+  let currentIndex = 0;
+
+  function renderSlide(index) {
+    slides.forEach((slide, slideIndex) => {
+      slide.classList.toggle("is-active", slideIndex === index);
+    });
+
+    dots.forEach((dot, dotIndex) => {
+      dot.classList.toggle("is-active", dotIndex === index);
+    });
+  }
+
+  prevButton?.addEventListener("click", (event) => {
+    event.stopPropagation();
+    currentIndex = (currentIndex - 1 + slides.length) % slides.length;
+    renderSlide(currentIndex);
+  });
+
+  nextButton?.addEventListener("click", (event) => {
+    event.stopPropagation();
+    currentIndex = (currentIndex + 1) % slides.length;
+    renderSlide(currentIndex);
+  });
+
+  dots.forEach((dot, dotIndex) => {
+    dot.addEventListener("click", (event) => {
+      event.stopPropagation();
+      currentIndex = dotIndex;
+      renderSlide(currentIndex);
+    });
+  });
+
+  renderSlide(currentIndex);
+});
+
+// ==========================================
 // NAVBAR SCROLL EFFECT
 // ==========================================
 const navbar = document.getElementById("navbar");
@@ -243,9 +289,7 @@ document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
 // ==========================================
 // PROJECT CARD 3D TILT EFFECT
 // ==========================================
-const projectCards = document.querySelectorAll(
-  ".project__card, .skills__card, .about__card",
-);
+const projectCards = document.querySelectorAll(".skills__card, .about__card");
 
 projectCards.forEach((card) => {
   card.addEventListener("mousemove", (e) => {
@@ -305,37 +349,6 @@ function typeWriter(element, text, speed = 100) {
 //   const originalText = heroTitle.textContent;
 //   typeWriter(heroTitle, originalText, 80);
 // }
-
-// ==========================================
-// FORM SUBMISSION (Add your own backend logic)
-// ==========================================
-const contactForm = document.querySelector(".contact__form");
-
-if (contactForm) {
-  contactForm.addEventListener("submit", (e) => {
-    e.preventDefault();
-
-    // Get form data
-    const formData = new FormData(contactForm);
-    const data = Object.fromEntries(formData);
-
-    console.log("Form submitted:", data);
-
-    // Show success message (you can customize this)
-    alert("Thank you for your message! I'll get back to you soon.");
-
-    // Reset form
-    contactForm.reset();
-
-    // Here you would typically send the data to your backend
-    // Example:
-    // fetch('/api/contact', {
-    //   method: 'POST',
-    //   headers: { 'Content-Type': 'application/json' },
-    //   body: JSON.stringify(data)
-    // });
-  });
-}
 
 // ==========================================
 // LOADING ANIMATION

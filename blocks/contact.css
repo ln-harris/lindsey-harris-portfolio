@@ -99,3 +99,22 @@
   resize: vertical;
   min-height: 150px;
 }
+
+.form-group input.form-input-error,
+.form-group textarea.form-input-error {
+  border-color: #f87171;
+  box-shadow: 0 0 0 3px rgba(248, 113, 113, 0.12);
+}
+
+.form-error {
+  min-height: 1.2rem;
+  font-size: 0.9rem;
+  color: #fca5a5;
+}
+
+.form-status {
+  min-height: 1.4rem;
+  margin: -0.5rem 0 0;
+  font-size: 0.95rem;
+  color: #86efac;
+}
