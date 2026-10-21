@@ -1,31 +1,45 @@
-# 🚀 Lindsey Harris - Portfolio
+# Lindsey Harris — Portfolio
 
-This is my personal portfolio website, built to showcase who I am as a developer and the kind of work I want to bring to a team. I come from a business and analytics background, and that experience shaped how I approach software development: with curiosity, problem-solving, and a focus on building clean, user-friendly experiences.
+Personal portfolio built with React and Vite, preserving the original portfolio design, projects, images, theme toggle, animations, carousels, and contact form.
 
-Created with HTML, CSS, and vanilla JavaScript, this portfolio highlights my technical skills, featured projects, certifications, and career transition into tech. It is designed to feel modern, interactive, and personal while giving recruiters and collaborators a clear view of my growth, creativity, and hands-on development experience.
+## Getting started
 
-### Visual Experience
+Install Node.js LTS if needed. In VS Code, open this project folder (the folder containing `package.json`) and open Terminal → New Terminal.
 
-- **🎨 Animated Background**: Floating gradient orbs that create depth and movement
-- **✨ Particle System**: 50+ animated particles creating a dynamic atmosphere
-- **🌈 Gradient Animations**: Smooth color transitions throughout the site
-- **💫 Custom Cursor**: Interactive cursor with dot and outline that follows mouse movement
-- **🎯 Parallax Scrolling**: Background elements move at different speeds for depth
+```bash
+npm install
+npm run dev
+```
 
-### Interactive Elements
+Open the local URL printed by Vite. Stop the server with Ctrl+C.
 
-- **📜 Scroll Animations**: Elements fade and slide in as you scroll down
-- **🎴 3D Card Tilt**: Project and skill cards tilt based on mouse position
-- **🌓 Dark/Light Theme Toggle**: Smooth theme switching with localStorage persistence
-- **📱 Responsive Mobile Menu**: Hamburger menu for mobile devices
-- **⚡ Smooth Scroll**: Animated scrolling to sections with navbar offset
-- **📊 Scroll Progress Bar**: Visual indicator at top of page showing scroll position
+```bash
+npm run build
+npm run preview
+```
 
-### Sections
+`build` creates the production site in `dist/`; `preview` serves that build locally.
 
-1. **Hero** - Eye-catching intro with floating avatar, badges, and CTAs
-2. **Skills** - Grid of tech stack cards with hover effects
-3. **Projects** - Featured work with overlay effects and tech tags
-4. **About** - Personal interests with image cards
-5. **Contact** - Form and contact information
-6. **Footer** - Simple, elegant footer with back-to-top link
+## Structure
+
+- `src/components/` — each page section has a named folder containing its JSX and CSS.
+- `src/components/ProjectCarousel/` — reusable React carousel used by the Projects section.
+- `src/hooks/usePageEffects.js` — shared scroll, tilt, progress, and parallax effects with cleanup.
+- `src/images/` — imported image assets.
+- `src/utils/emailjs-config.js` — existing public EmailJS browser identifiers.
+- `src/App.jsx` — page composition.
+- `src/App.css` — page styles.
+- `src/index.css` — shared theme variables, base styles, section styles, and animations.
+- `src/responsive.css` — shared responsive overrides, imported after component styles to preserve the original cascade.
+- `src/main.jsx` — React entry point.
+- `public/assets/` — static downloads, served unchanged.
+
+No `blocks/` or `pages/` folders are used. Navigation, theme, rotating text, carousels, and form state use React. Effects clean up listeners, timers, observers, and animation frames under Strict Mode.
+
+## Contact form
+
+EmailJS is installed as a dependency. It requires an internet connection and the configured EmailJS service/template. Validation can be checked locally without sending a message. Public browser identifiers are not server secrets.
+
+## Deployment
+
+Deploy the contents of `dist/` to your static host after running `npm run build`. Vite uses relative asset URLs for static hosting. Existing deployment workflows that served the old HTML directly need a build step.
