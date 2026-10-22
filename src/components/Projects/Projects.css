@@ -177,6 +177,14 @@
   border-color: #339933;
   color: #339933;
 }
+.tech-tag.tech-tag--red {
+  border-color: #ef4444;
+  color: #ef4444;
+}
+.tech-tag.tech-tag--silver {
+  border-color: #c0c0c0;
+  color: #c0c0c0;
+}
 .tech-tag.postgres {
   border-color: #336791;
   color: #336791;

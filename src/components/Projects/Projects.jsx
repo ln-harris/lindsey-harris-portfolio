@@ -1,15 +1,15 @@
 import ProjectCarousel from "../ProjectCarousel/ProjectCarousel";
 import "./Projects.css";
-import image0 from "../../images/wtwr-desktop.png";
-import image1 from "../../images/wtwr-addmodal.png";
-import image2 from "../../images/wtwr-prevmodal.png";
-import image3 from "../../images/spots_desktop.png";
-import image4 from "../../images/spots-editmodal.png";
-import image5 from "../../images/spots-previewmodal.png";
-import image6 from "../../images/tp-main.png";
-import image7 from "../../images/tp-recipe.png";
-import image8 from "../../images/tp-book.png";
-import image9 from "../../images/tp-menu.png";
+import wtwr1 from "../../images/wtwr-desktop.png";
+import wtwr2 from "../../images/wtwr-addmodal.png";
+import wtwr3 from "../../images/wtwr-prevmodal.png";
+import spots1 from "../../images/spots_desktop.png";
+import spots2 from "../../images/spots-editmodal.png";
+import spots3 from "../../images/spots-previewmodal.png";
+import tp1 from "../../images/tp-main.png";
+import tp2 from "../../images/tp-recipe.png";
+import tp3 from "../../images/tp-book.png";
+import tp4 from "../../images/tp-menu.png";
 
 export default function Projects() {
   return (
@@ -31,17 +31,17 @@ export default function Projects() {
             <div className="project__carousel-track">
               <img
                 className="project__image is-active"
-                src={image0}
+                src={wtwr1}
                 alt="WTWR desktop view"
               />
               <img
                 className="project__image"
-                src={image1}
+                src={wtwr2}
                 alt="WTWR add clothing modal"
               />
               <img
                 className="project__image"
-                src={image2}
+                src={wtwr3}
                 alt="WTWR clothing preview modal"
               />
             </div>
@@ -92,11 +92,20 @@ export default function Projects() {
             </p>
             <div className="project__tech">
               <span className="tech-tag react">React</span>
-              <span className="tech-tag">Vite</span>
               <span className="tech-tag js">JavaScript</span>
-              <span className="tech-tag css">CSS</span>
               <span className="tech-tag">OpenWeather API</span>
-              <span className="tech-tag">GitHub Pages</span>
+              <span className="tech-tag node">Node.js</span>
+              <span className="tech-tag node">Express.js</span>
+              <span className="tech-tag api tech-tag--red">REST API</span>
+              <span className="tech-tag">MongoDB</span>
+              <span className="tech-tag">Mongoose</span>
+              <span className="tech-tag">JWT</span>
+              <span className="tech-tag">Certbot</span>
+              <span className="tech-tag tech-tag--silver">Google Cloud</span>
+              <span className="tech-tag">NGINX</span>
+              <span className="tech-tag">PM2</span>
+              <span className="tech-tag">Postman</span>
+              <span className="tech-tag">ESLint</span>
             </div>
             <div className="project__links">
               <span className="project__link disabled">
@@ -123,17 +132,17 @@ export default function Projects() {
             <div className="project__carousel-track">
               <img
                 className="project__image is-active"
-                src={image3}
+                src={spots1}
                 alt="Spots desktop view"
               />
               <img
                 className="project__image"
-                src={image4}
+                src={spots2}
                 alt="Spots edit profile modal"
               />
               <img
                 className="project__image"
-                src={image5}
+                src={spots3}
                 alt="Spots preview modal"
               />
             </div>
@@ -182,10 +191,16 @@ export default function Projects() {
               visual content.
             </p>
             <div className="project__tech">
+              <span className="tech-tag">Figma</span>
+              <span className="tech-tag">Vite</span>
+              <span className="tech-tag">npm</span>
               <span className="tech-tag html">HTML5</span>
               <span className="tech-tag css">CSS3</span>
               <span className="tech-tag js">JavaScript</span>
-              <span className="tech-tag api">REST API</span>
+              <span className="tech-tag api">RESTful API</span>
+              <span className="tech-tag">Flexbox</span>
+              <span className="tech-tag">Media Queries</span>
+              <span className="tech-tag">Git &amp; GitHub</span>
             </div>
             <div className="project__links">
               <a
@@ -216,22 +231,22 @@ export default function Projects() {
             <div className="project__carousel-track">
               <img
                 className="project__image is-active"
-                src={image6}
+                src={tp1}
                 alt="Triple Peaks main section"
               />
               <img
                 className="project__image"
-                src={image7}
+                src={tp2}
                 alt="Triple Peaks recipe section"
               />
               <img
                 className="project__image"
-                src={image8}
+                src={tp3}
                 alt="Triple Peaks booking section"
               />
               <img
                 className="project__image"
-                src={image9}
+                src={tp4}
                 alt="Triple Peaks menu section"
               />
             </div>

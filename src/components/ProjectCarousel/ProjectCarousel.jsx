@@ -46,7 +46,7 @@ export default function ProjectCarousel({ children }) {
     });
   }
   return (
-    <div className="project__carousel" data-carousel>
+    <div className="project__carousel project__image-container" data-carousel>
       {render(children)}
     </div>
   );

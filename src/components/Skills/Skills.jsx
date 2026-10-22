@@ -62,9 +62,6 @@ export default function Skills() {
               <span className="skill-dot"></span>Express.js
             </li>
             <li>
-              <span className="skill-dot"></span>Python
-            </li>
-            <li>
               <span className="skill-dot"></span>Cloud Deployment
             </li>
             <li>
@@ -91,10 +88,10 @@ export default function Skills() {
               <span className="skill-dot"></span>SQL
             </li>
             <li>
-              <span className="skill-dot"></span>Database Design
+              <span className="skill-dot"></span>MondoDB
             </li>
             <li>
-              <span className="skill-dot"></span>Query Optimization
+              <span className="skill-dot"></span>Database Design
             </li>
           </ul>
         </div>
@@ -124,6 +121,9 @@ export default function Skills() {
             </li>
             <li>
               <span className="skill-dot"></span>NPM
+            </li>
+            <li>
+              <span className="skill-dot"></span>Postman
             </li>
           </ul>
         </div>

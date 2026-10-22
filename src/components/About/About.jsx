@@ -19,24 +19,24 @@ export default function About() {
             <p>
               I graduated in 2020 with a Bachelors of Science in Business
               Management at CCSU, during the start of the pandemic. Instead of
-              waiting htmlFor opportunity, I built my own. I taught myself
+              waiting for opportunity, I built my own. I taught myself
               technical analysis, learned to interpret complex data, and shared
               my process on YouTube. After offering data analysis education and
-              growing a channel
+              growing a channel with{" "}
               <span className="highlight">200% growth in three months</span>, I
-              was offered a performance-based contract through the
-              <span className="highlight">YouTube Partner Program</span>
+              was offered a performance-based contract through the{" "}
+              <span className="highlight">YouTube Partner Program</span>{" "}
               and became the lead podcast host.
             </p>
 
             <p>
               I'm continuing to grow my career in tech, bringing a mix of
               analytical thinking, client experience, and hands-on software
-              development. I had always coded htmlFor fun, but eventually
-              realized the
+              development. I had always coded for fun, but eventually
+              realized the{" "}
               <span className="highlight">daily problem solving</span> I enjoy
               as an analyst was similar thinking to a developer. It's not just
-              about fixing a problem but
+              about fixing a problem but{" "}
               <span className="highlight">
                 planning ahead to prevent future problems
               </span>
@@ -45,7 +45,7 @@ export default function About() {
             </p>
 
             <p>
-              I committed fully and completed
+              I committed fully and completed{" "}
               <span className="highlight">TripleTen's Full-Stack program</span>,
               spending <span className="highlight">1,800+ hours</span> coding
               and building real applications. I’m ready to contribute to a team,
@@ -78,18 +78,18 @@ export default function About() {
               <pre>
                 <code>
                   <span className="code-keyword">const</span>{" "}
-                  <span className="code-var">journey</span> = {"{"}
+                  <span className="code-var">journey</span> = {"{"}{"\n  "}
                   <span className="code-property">passion</span>:{" "}
-                  <span className="code-string">'problem-solving'</span>,
+                  <span className="code-string">'problem-solving'</span>,{"\n  "}
                   <span className="code-property">commitment</span>:{" "}
-                  <span className="code-string">'1800+ hours'</span>,
+                  <span className="code-string">'1800+ hours'</span>,{"\n  "}
                   <span className="code-property">focus</span>:{" "}
-                  <span className="code-string">'clean, practical code'</span>,
+                  <span className="code-string">'clean, practical code'</span>,{"\n  "}
                   <span className="code-function">buildFuture</span>:{" "}
-                  <span className="code-keyword">function</span>() {"{"}
+                  <span className="code-keyword">function</span>() {"{"}{"\n    "}
                   <span className="code-keyword">return</span>{" "}
                   <span className="code-string">'one solution at a time'</span>;
-                  {"}"}
+                  {"\n  }\n"}
                   {"}"};
                 </code>
               </pre>
