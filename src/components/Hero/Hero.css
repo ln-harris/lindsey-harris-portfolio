@@ -325,9 +325,9 @@
 
 /* Scroll Down Indicator */
 .scroll-down {
-  position: absolute;
-  bottom: 2rem;
-  left: 2rem;
+  position: static;
+  width: fit-content;
+  margin-top: 2rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -372,14 +372,8 @@
 }
 
 /* Mobile adjustments */
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
   .scroll-down {
-    left: 50%;
-    transform: translateX(-50%);
-    bottom: 1.5rem;
-  }
-
-  .scroll-down:hover {
-    transform: translateX(-50%) translateY(-5px);
+    margin-inline: auto;
   }
 }
