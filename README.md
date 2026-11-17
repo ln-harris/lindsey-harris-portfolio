@@ -8,4 +8,6 @@ EmailJS is installed as a dependency. It requires an internet connection and the
 
 ## Deployment
 
+💻View Live Site https://ln-harris.github.io/lindsey-harris-portfolio/
+
 Deploy the contents of `dist/` to your static host after running `npm run build`. Vite uses relative asset URLs for static hosting. Existing deployment workflows that served the old HTML directly need a build step.
