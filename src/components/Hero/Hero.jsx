@@ -60,7 +60,7 @@ export default function Hero() {
           </span>
         </div>
         <div className="hero__cta">
-          <a href="/assets/certs/resume.pdf" className="btn btn-primary" download>
+          <a href="./resume.pdf" className="btn btn-primary" download>
             <i className="fa-solid fa-download"></i>
             <span>Resume</span>
           </a>
