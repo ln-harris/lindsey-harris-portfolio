@@ -6,10 +6,17 @@ import wtwr3 from "../../images/wtwr-prevmodal.png";
 import spots1 from "../../images/spots_desktop.png";
 import spots2 from "../../images/spots-editmodal.png";
 import spots3 from "../../images/spots-previewmodal.png";
+import spots4 from "../../images/spots-demo_mobile_view.png";
 import tp1 from "../../images/tp-main.png";
 import tp2 from "../../images/tp-recipe.png";
 import tp3 from "../../images/tp-book.png";
 import tp4 from "../../images/tp-menu.png";
+
+import news1 from "../../images/news-home-page.png";
+import news2 from "../../images/news-search-results.png";
+import news3 from "../../images/news-saved-news.png";
+import news4 from "../../images/news-mobile-home-page.png";
+import news5 from "../../images/news-mobile-saved.png";
 
 export default function Projects() {
   return (
@@ -26,6 +33,130 @@ export default function Projects() {
         <div
           className="project__card animate-on-scroll"
           style={{ "--delay": "0.1s" }}
+        >
+          <ProjectCarousel>
+            <div className="project__carousel-track">
+              <img
+                className="project__image is-active"
+                src={news1}
+                alt="News Explorer home page"
+              />
+              <img
+                className="project__image"
+                src={news2}
+                alt="News Explorer search results"
+              />
+              <img
+                className="project__image"
+                src={news3}
+                alt="News Explorer saved articles"
+              />
+              <img
+                className="project__image project__image--mobile"
+                src={news4}
+                alt="News Explorer mobile home page"
+              />
+              <img
+                className="project__image project__image--mobile"
+                src={news5}
+                alt="News Explorer mobile saved articles"
+              />
+            </div>
+            <button
+              className="project__carousel-btn project__carousel-btn--prev"
+              type="button"
+              aria-label="Previous project image"
+              data-carousel-prev
+            >
+              <i className="fas fa-chevron-left"></i>
+            </button>
+            <button
+              className="project__carousel-btn project__carousel-btn--next"
+              type="button"
+              aria-label="Next project image"
+              data-carousel-next
+            >
+              <i className="fas fa-chevron-right"></i>
+            </button>
+            <div className="project__carousel-dots" aria-label="Project images">
+              <button
+                className="project__carousel-dot is-active"
+                type="button"
+                aria-label="Show project image 1"
+                data-carousel-dot="0"
+              ></button>
+              <button
+                className="project__carousel-dot"
+                type="button"
+                aria-label="Show project image 2"
+                data-carousel-dot="1"
+              ></button>
+              <button
+                className="project__carousel-dot"
+                type="button"
+                aria-label="Show project image 3"
+                data-carousel-dot="2"
+              ></button>
+              <button
+                className="project__carousel-dot"
+                type="button"
+                aria-label="Show News Explorer mobile home page"
+                data-carousel-dot="3"
+              ></button>
+              <button
+                className="project__carousel-dot"
+                type="button"
+                aria-label="Show News Explorer mobile saved articles"
+                data-carousel-dot="4"
+              ></button>
+            </div>
+          </ProjectCarousel>
+          <div className="project__content">
+            <h3 className="project__title">News Explorer</h3>
+            <p className="project__description">
+              A responsive news app that lets users search for articles by
+              keyword, read stories from original sources, and save favorites to
+              a personal collection. Includes sign-in and registration forms
+              with simulated authentication.
+            </p>
+            <div className="project__tech">
+              <span className="tech-tag react">React</span>
+              <span className="tech-tag js">JavaScript</span>
+              <span className="tech-tag">React Router</span>
+              <span className="tech-tag news-api">NewsAPI</span>
+              <span className="tech-tag api">REST API</span>
+              <span className="tech-tag">Vite</span>
+              <span className="tech-tag html">HTML5</span>
+              <span className="tech-tag css">CSS3</span>
+              <span className="tech-tag">BEM</span>
+              <span className="tech-tag">Responsive Design</span>
+            </div>
+            <div className="project__links">
+              <a
+                href="https://ln-harris.github.io/news-explorer/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="project__link"
+              >
+                <i className="fas fa-rocket"></i>
+                Try Demo
+              </a>
+              <a
+                href="https://github.com/ln-harris/news-explorer"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="project__link"
+              >
+                <i className="fab fa-github"></i>
+                Code
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div
+          className="project__card animate-on-scroll"
+          style={{ "--delay": "0.2s" }}
         >
           <ProjectCarousel>
             <div className="project__carousel-track">
@@ -93,10 +224,10 @@ export default function Projects() {
             <div className="project__tech">
               <span className="tech-tag react">React</span>
               <span className="tech-tag js">JavaScript</span>
-              <span className="tech-tag">OpenWeather API</span>
+              <span className="tech-tag news-api">OpenWeather API</span>
               <span className="tech-tag node">Node.js</span>
               <span className="tech-tag node">Express.js</span>
-              <span className="tech-tag api tech-tag--red">REST API</span>
+              <span className="tech-tag api">REST API</span>
               <span className="tech-tag">MongoDB</span>
               <span className="tech-tag">Mongoose</span>
               <span className="tech-tag">JWT</span>
@@ -108,10 +239,6 @@ export default function Projects() {
               <span className="tech-tag">ESLint</span>
             </div>
             <div className="project__links">
-              <span className="project__link disabled">
-                <i className="fas fa-rocket"></i>
-                Try Demo
-              </span>
               <a
                 href="https://github.com/ln-harris/se_project_react"
                 target="_blank"
@@ -126,7 +253,7 @@ export default function Projects() {
 
         <div
           className="project__card animate-on-scroll"
-          style={{ "--delay": "0.2s" }}
+          style={{ "--delay": "0.3s" }}
         >
           <ProjectCarousel>
             <div className="project__carousel-track">
@@ -144,6 +271,11 @@ export default function Projects() {
                 className="project__image"
                 src={spots3}
                 alt="Spots preview modal"
+              />
+              <img
+                className="project__image project__image--mobile"
+                src={spots4}
+                alt="Spots mobile view"
               />
             </div>
             <button
@@ -181,6 +313,12 @@ export default function Projects() {
                 aria-label="Show project image 3"
                 data-carousel-dot="2"
               ></button>
+              <button
+                className="project__carousel-dot"
+                type="button"
+                aria-label="Show Spots mobile view"
+                data-carousel-dot="3"
+              ></button>
             </div>
           </ProjectCarousel>
           <div className="project__content">
@@ -191,13 +329,13 @@ export default function Projects() {
               visual content.
             </p>
             <div className="project__tech">
-              <span className="tech-tag">Figma</span>
-              <span className="tech-tag">Vite</span>
-              <span className="tech-tag">npm</span>
               <span className="tech-tag html">HTML5</span>
               <span className="tech-tag css">CSS3</span>
               <span className="tech-tag js">JavaScript</span>
-              <span className="tech-tag api">RESTful API</span>
+              <span className="tech-tag api">REST API</span>
+              <span className="tech-tag">Figma</span>
+              <span className="tech-tag">Vite</span>
+              <span className="tech-tag">npm</span>
               <span className="tech-tag">Flexbox</span>
               <span className="tech-tag">Media Queries</span>
               <span className="tech-tag">Git &amp; GitHub</span>
@@ -225,7 +363,7 @@ export default function Projects() {
 
         <div
           className="project__card animate-on-scroll"
-          style={{ "--delay": "0.3s" }}
+          style={{ "--delay": "0.4s" }}
         >
           <ProjectCarousel>
             <div className="project__carousel-track">
@@ -310,13 +448,19 @@ export default function Projects() {
               <span className="tech-tag">CSS Animation</span>
             </div>
             <div className="project__links">
-              <span className="project__link disabled">
+              <a
+                href="https://ln-harris.github.io/se_project_coffeeshop/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="project__link"
+              >
                 <i className="fas fa-rocket"></i>
                 View Live
-              </span>
+              </a>
               <a
                 href="https://github.com/ln-harris/se_project_coffeeshop"
                 target="_blank"
+                rel="noopener noreferrer"
                 className="project__link"
               >
                 <i className="fab fa-github"></i>

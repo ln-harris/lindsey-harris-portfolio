@@ -17,7 +17,10 @@ export default function ProjectCarousel({ children }) {
       const props = {};
       if (child.type === "img") {
         const index = slide++;
-        props.className = `project__image${index === current ? " is-active" : ""}`;
+        props.className = `${(child.props.className || "project__image")
+          .split(" ")
+          .filter((name) => name !== "is-active")
+          .join(" ")}${index === current ? " is-active" : ""}`;
       }
       if ("data-carousel-prev" in child.props)
         props.onClick = (event) => {

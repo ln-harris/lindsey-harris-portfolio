@@ -1,6 +1,8 @@
 import "./Certifications.css";
 import frontEndCertificate from "../../images/front-end-engineer-certificate.png";
 import fullStackCertificate from "../../images/fullstack.png";
+import completionCertificate from "../../images/Certificate-Completion-TP.pdf";
+import completionCertificateImage from "../../images/certificate-completion.png";
 
 export default function Certifications() {
   return (
@@ -35,9 +37,6 @@ export default function Certifications() {
           </div>
           <div className="cert-content">
             <h3 className="cert-title">Full-Stack Developer</h3>
-            <p className="cert-issuer">
-              TripleTen Software Engineering Program
-            </p>
             <a
               href="./assets/certs/full-stack-developer-certificate.pdf"
               target="_blank"
@@ -63,15 +62,36 @@ export default function Certifications() {
           </div>
           <div className="cert-content">
             <h3 className="cert-title">Front-End Engineer</h3>
-            <p className="cert-issuer">
-              TripleTen Software Engineering Program
-            </p>
             <a
               href="./assets/certs/front-end-engineer-certificate.pdf"
               target="_blank"
               className="cert-link"
             >
               <i className="fas fa-file-pdf"></i>
+              View Certificate
+            </a>
+          </div>
+        </div>
+        {/* Certificate of Completion */}
+        <div
+          className="cert-card animate-on-scroll"
+          style={{ "--delay": "0.3s" }}
+        >
+          <div className="cert-image">
+            <img
+              src={completionCertificateImage}
+              alt="Lindsey Harris Certificate of Completion"
+            />
+          </div>
+          <div className="cert-content">
+            <h3 className="cert-title">Certificate of Completion</h3>
+            <a
+              href={completionCertificate}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="cert-link"
+            >
+              <i className="fas fa-file-pdf" aria-hidden="true"></i>
               View Certificate
             </a>
           </div>

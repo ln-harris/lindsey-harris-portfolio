@@ -49,6 +49,10 @@
   opacity: 1;
 }
 
+.project__image--mobile {
+  object-fit: contain;
+}
+
 .project__carousel-btn {
   position: absolute;
   top: 50%;
@@ -177,9 +181,14 @@
   border-color: #339933;
   color: #339933;
 }
-.tech-tag.tech-tag--red {
+.tech-tag.api {
   border-color: #ef4444;
   color: #ef4444;
+}
+
+.tech-tag.news-api {
+  border-color: #f472b6;
+  color: #f472b6;
 }
 .tech-tag.tech-tag--silver {
   border-color: #c0c0c0;

@@ -19,7 +19,7 @@
 
 .certifications__grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 420px));
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
   justify-content: center;
   gap: 2rem;
   max-width: 1200px;
@@ -74,13 +74,6 @@
   font-weight: 600;
   color: var(--text-primary);
   margin-bottom: 0.5rem;
-}
-
-.cert-issuer {
-  font-size: 1rem;
-  color: var(--accent-primary);
-  font-weight: 500;
-  margin-bottom: 0.25rem;
 }
 
 .cert-link {
