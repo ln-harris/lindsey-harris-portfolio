@@ -373,6 +373,11 @@
 
 /* Mobile adjustments */
 @media (max-width: 1024px) {
+  .rotating-word {
+    min-width: 0;
+    text-align: center;
+  }
+
   .scroll-down {
     margin-inline: auto;
   }
