@@ -88,7 +88,7 @@ export default function Skills() {
               <span className="skill-dot"></span>SQL
             </li>
             <li>
-              <span className="skill-dot"></span>MondoDB
+              <span className="skill-dot"></span>MongoDB
             </li>
             <li>
               <span className="skill-dot"></span>Database Design
