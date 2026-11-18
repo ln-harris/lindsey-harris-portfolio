@@ -216,10 +216,10 @@ export default function Projects() {
           <div className="project__content">
             <h3 className="project__title">WTWR</h3>
             <p className="project__description">
-              WTWR, short htmlFor "What to Wear," is a weather-based clothing
-              app that shows the current temperature htmlFor a user's location
-              and suggests clothing based on hot, warm, or cold conditions
-              through a clean React interface.
+              WTWR, short for "What to Wear," is a weather-based clothing app
+              that shows the current temperature htmlFor a user's location and
+              suggests clothing based on hot, warm, or cold conditions through a
+              clean React interface.
             </p>
             <div className="project__tech">
               <span className="tech-tag react">React</span>
