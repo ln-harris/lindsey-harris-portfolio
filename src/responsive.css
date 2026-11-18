@@ -27,13 +27,17 @@
 }
 
 @media (max-width: 768px) {
+  .nav {
+    position: sticky;
+  }
+
   .theme-toggle-label {
     display: none;
   }
 
   .nav__links {
-    position: fixed;
-    top: 80px;
+    position: absolute;
+    top: 100%;
     left: 0;
     right: 0;
     flex-direction: column;
@@ -43,16 +47,24 @@
     gap: 1.5rem;
     transform: translateY(-100%);
     opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
     transition: all var(--transition-base);
   }
 
   .nav__links.active {
     transform: translateY(0);
     opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
   }
 
   .nav-toggle {
     display: flex;
+  }
+
+  .hero {
+    padding-top: 2rem;
   }
 
   .hero__title {
@@ -98,7 +110,7 @@
   }
 
   .hero {
-    padding: 5rem 5% 3rem;
+    padding: 2rem 5% 3rem;
   }
 
   .hero__title {

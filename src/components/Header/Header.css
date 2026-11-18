@@ -97,13 +97,13 @@
   border-radius: 12px;
   cursor: pointer;
   font-size: 1.2rem;
-  transition: all var(--transition-base);
 }
 
-.theme-toggle:hover {
-  background: var(--accent-primary);
-  color: white;
-  transform: rotate(20deg);
+@media (hover: hover) {
+  .theme-toggle:hover {
+    background: var(--accent-primary);
+    color: white;
+  }
 }
 
 .nav-toggle {
