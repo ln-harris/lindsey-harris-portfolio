@@ -26,9 +26,9 @@ export default function BeyondCoding() {
             <h3>PC Building & Gaming</h3>
             <p>
               This is my gaming PC I built myself. My tech journey was inspired
-              from my love htmlFor gaming development. Since I was a child, I
-              was always the appointed "IT" person of the house. I'm always
-              fixing tech issues or explaining how to use apps to my family.
+              from my love for gaming development. Since I was a child, I was
+              always the appointed "IT" person of the house. I'm always fixing
+              tech issues or explaining how to use apps to my family.
             </p>
           </div>
         </div>
