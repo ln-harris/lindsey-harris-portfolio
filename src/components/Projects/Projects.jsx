@@ -7,16 +7,28 @@ import spots1 from "../../images/spots_desktop.png";
 import spots2 from "../../images/spots-editmodal.png";
 import spots3 from "../../images/spots-previewmodal.png";
 import spots4 from "../../images/spots-demo_mobile_view.png";
-import tp1 from "../../images/tp-main.png";
-import tp2 from "../../images/tp-recipe.png";
-import tp3 from "../../images/tp-book.png";
-import tp4 from "../../images/tp-menu.png";
 
 import news1 from "../../images/news-home-page.png";
 import news2 from "../../images/news-search-results.png";
 import news3 from "../../images/news-saved-news.png";
 import news4 from "../../images/news-mobile-home-page.png";
 import news5 from "../../images/news-mobile-saved.png";
+
+import hhm1 from "../../images/hhm-home.png";
+import hhm2 from "../../images/hhm-ministry-impact.png";
+import hhm3 from "../../images/hhm-community-gallery.png";
+import hhm4 from "../../images/hhm-explore-menu.png";
+import hhm5 from "../../images/hhm-calendar.png";
+import hhm6 from "../../images/hhm-giving.png";
+
+const heavenlyHopeSlides = [
+  { src: hhm1, label: "Homepage" },
+  { src: hhm2, label: "Ministry impact and weekly schedule" },
+  { src: hhm3, label: "Life at Heavenly Hope photo gallery" },
+  { src: hhm4, label: "Support Our Mission page with the Explore menu open" },
+  { src: hhm5, label: "Community calendar" },
+  { src: hhm6, label: "Charitable giving form" },
+];
 
 export default function Projects() {
   return (
@@ -367,26 +379,14 @@ export default function Projects() {
         >
           <ProjectCarousel>
             <div className="project__carousel-track">
-              <img
-                className="project__image is-active"
-                src={tp1}
-                alt="Triple Peaks main section"
-              />
-              <img
-                className="project__image"
-                src={tp2}
-                alt="Triple Peaks recipe section"
-              />
-              <img
-                className="project__image"
-                src={tp3}
-                alt="Triple Peaks booking section"
-              />
-              <img
-                className="project__image"
-                src={tp4}
-                alt="Triple Peaks menu section"
-              />
+              {heavenlyHopeSlides.map(({ src, label }) => (
+                <img
+                  key={src}
+                  className="project__image project__image--contain"
+                  src={src}
+                  alt={label}
+                />
+              ))}
             </div>
             <button
               className="project__carousel-btn project__carousel-btn--prev"
@@ -405,67 +405,35 @@ export default function Projects() {
               <i className="fas fa-chevron-right"></i>
             </button>
             <div className="project__carousel-dots" aria-label="Project images">
-              <button
-                className="project__carousel-dot is-active"
-                type="button"
-                aria-label="Show project image 1"
-                data-carousel-dot="0"
-              ></button>
-              <button
-                className="project__carousel-dot"
-                type="button"
-                aria-label="Show project image 2"
-                data-carousel-dot="1"
-              ></button>
-              <button
-                className="project__carousel-dot"
-                type="button"
-                aria-label="Show project image 3"
-                data-carousel-dot="2"
-              ></button>
-              <button
-                className="project__carousel-dot"
-                type="button"
-                aria-label="Show project image 4"
-                data-carousel-dot="3"
-              ></button>
+              {heavenlyHopeSlides.map(({ src, label }, index) => (
+                <button
+                  key={src}
+                  className="project__carousel-dot"
+                  type="button"
+                  aria-label={`Show screenshot: ${label}`}
+                  data-carousel-dot={index}
+                />
+              ))}
             </div>
           </ProjectCarousel>
           <div className="project__content">
-            <h3 className="project__title">Triple Peaks Coffee Shop</h3>
+            <h3 className="project__title">Heavenly Hope Ministries</h3>
             <p className="project__description">
-              Triple Peaks Coffee Shop is a responsive landing page project
-              created htmlFor the TripleTen Software Engineering program using
-              HTML and CSS, based on a provided design brief with custom form
-              elements and interactive visual details.
+              I partnered with another software engineer to build a website for
+              Heavenly Hope Ministries as a client project. The website and
+              source code are temporarily unavailable while we fix the remaining
+              bugs and prepare the site for launch.
             </p>
             <div className="project__tech">
-              <span className="tech-tag html">HTML5</span>
-              <span className="tech-tag css">CSS</span>
-              <span className="tech-tag">Flexbox</span>
-              <span className="tech-tag">BEM</span>
-              <span className="tech-tag">Forms</span>
-              <span className="tech-tag">CSS Animation</span>
+              <span className="tech-tag react">React</span>
+              <span className="tech-tag">TypeScript</span>
             </div>
-            <div className="project__links">
-              <a
-                href="https://ln-harris.github.io/se_project_coffeeshop/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="project__link"
-              >
-                <i className="fas fa-rocket"></i>
-                View Live
-              </a>
-              <a
-                href="https://github.com/ln-harris/se_project_coffeeshop"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="project__link"
-              >
-                <i className="fab fa-github"></i>
-                Code
-              </a>
+            <div className="project__links project__links--client">
+              <span className="tech-tag">In progress</span>
+              <span className="project__client-badge">
+                <i className="fas fa-star" aria-hidden="true"></i>
+                Client Project
+              </span>
             </div>
           </div>
         </div>
