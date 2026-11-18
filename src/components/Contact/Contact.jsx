@@ -106,6 +106,7 @@ export default function Contact() {
               type="text"
               id="name"
               name="name"
+              autoComplete="name"
               onBlur={handleField}
               onChange={(event) => {
                 if (errors.name) handleField(event);
@@ -127,6 +128,7 @@ export default function Contact() {
               type="email"
               id="email"
               name="email"
+              autoComplete="email"
               onBlur={handleField}
               onChange={(event) => {
                 if (errors.email) handleField(event);
