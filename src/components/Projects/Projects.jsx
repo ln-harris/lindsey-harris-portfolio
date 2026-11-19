@@ -172,6 +172,77 @@ export default function Projects() {
         >
           <ProjectCarousel>
             <div className="project__carousel-track">
+              {heavenlyHopeSlides.map(({ src, label }) => (
+                <img
+                  key={src}
+                  className="project__image project__image--contain"
+                  src={src}
+                  alt={label}
+                />
+              ))}
+            </div>
+            <button
+              className="project__carousel-btn project__carousel-btn--prev"
+              type="button"
+              aria-label="Previous project image"
+              data-carousel-prev
+            >
+              <i className="fas fa-chevron-left"></i>
+            </button>
+            <button
+              className="project__carousel-btn project__carousel-btn--next"
+              type="button"
+              aria-label="Next project image"
+              data-carousel-next
+            >
+              <i className="fas fa-chevron-right"></i>
+            </button>
+            <div className="project__carousel-dots" aria-label="Project images">
+              {heavenlyHopeSlides.map(({ src, label }, index) => (
+                <button
+                  key={src}
+                  className="project__carousel-dot"
+                  type="button"
+                  aria-label={`Show screenshot: ${label}`}
+                  data-carousel-dot={index}
+                />
+              ))}
+            </div>
+          </ProjectCarousel>
+          <div className="project__content">
+            <h3 className="project__title">Heavenly Hope Ministries</h3>
+            <p className="project__description">
+              I partnered with another software engineer to build a website for
+              Heavenly Hope Ministries as a client project. The website and
+              source code are temporarily unavailable while we fix the remaining
+              bugs and prepare the site for launch.
+            </p>
+            <div className="project__tech">
+              <span className="tech-tag react">React</span>
+              <span className="tech-tag typescript">TypeScript</span>
+              <span className="tech-tag js">JavaScript</span>
+              <span className="tech-tag html">HTML5</span>
+              <span className="tech-tag css">CSS3</span>
+              <span className="tech-tag">React Router</span>
+              <span className="tech-tag">Vite</span>
+              <span className="tech-tag cloudflare">Cloudflare Pages</span>
+            </div>
+            <div className="project__links project__links--client">
+              <span className="tech-tag">In progress</span>
+              <span className="project__client-badge">
+                <i className="fas fa-star" aria-hidden="true"></i>
+                Client Project
+              </span>
+            </div>
+          </div>
+        </div>
+
+        <div
+          className="project__card animate-on-scroll"
+          style={{ "--delay": "0.3s" }}
+        >
+          <ProjectCarousel>
+            <div className="project__carousel-track">
               <img
                 className="project__image is-active"
                 src={wtwr1}
@@ -265,7 +336,7 @@ export default function Projects() {
 
         <div
           className="project__card animate-on-scroll"
-          style={{ "--delay": "0.3s" }}
+          style={{ "--delay": "0.4s" }}
         >
           <ProjectCarousel>
             <div className="project__carousel-track">
@@ -369,71 +440,6 @@ export default function Projects() {
                 <i className="fab fa-github"></i>
                 Code
               </a>
-            </div>
-          </div>
-        </div>
-
-        <div
-          className="project__card animate-on-scroll"
-          style={{ "--delay": "0.4s" }}
-        >
-          <ProjectCarousel>
-            <div className="project__carousel-track">
-              {heavenlyHopeSlides.map(({ src, label }) => (
-                <img
-                  key={src}
-                  className="project__image project__image--contain"
-                  src={src}
-                  alt={label}
-                />
-              ))}
-            </div>
-            <button
-              className="project__carousel-btn project__carousel-btn--prev"
-              type="button"
-              aria-label="Previous project image"
-              data-carousel-prev
-            >
-              <i className="fas fa-chevron-left"></i>
-            </button>
-            <button
-              className="project__carousel-btn project__carousel-btn--next"
-              type="button"
-              aria-label="Next project image"
-              data-carousel-next
-            >
-              <i className="fas fa-chevron-right"></i>
-            </button>
-            <div className="project__carousel-dots" aria-label="Project images">
-              {heavenlyHopeSlides.map(({ src, label }, index) => (
-                <button
-                  key={src}
-                  className="project__carousel-dot"
-                  type="button"
-                  aria-label={`Show screenshot: ${label}`}
-                  data-carousel-dot={index}
-                />
-              ))}
-            </div>
-          </ProjectCarousel>
-          <div className="project__content">
-            <h3 className="project__title">Heavenly Hope Ministries</h3>
-            <p className="project__description">
-              I partnered with another software engineer to build a website for
-              Heavenly Hope Ministries as a client project. The website and
-              source code are temporarily unavailable while we fix the remaining
-              bugs and prepare the site for launch.
-            </p>
-            <div className="project__tech">
-              <span className="tech-tag react">React</span>
-              <span className="tech-tag">TypeScript</span>
-            </div>
-            <div className="project__links project__links--client">
-              <span className="tech-tag">In progress</span>
-              <span className="project__client-badge">
-                <i className="fas fa-star" aria-hidden="true"></i>
-                Client Project
-              </span>
             </div>
           </div>
         </div>

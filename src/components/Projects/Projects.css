@@ -178,6 +178,14 @@
   border-color: #61dafb;
   color: #61dafb;
 }
+.tech-tag.typescript {
+  border-color: #4ade80;
+  color: #4ade80;
+}
+.tech-tag.cloudflare {
+  border-color: #f6821f;
+  color: #f6821f;
+}
 .tech-tag.node {
   border-color: #339933;
   color: #339933;
