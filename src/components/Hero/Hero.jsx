@@ -39,7 +39,6 @@ export default function Hero() {
         </p>
         <p className="hero__subtitle">
           Focused on creating user-friendly apps with a touch of modern design.
-          <br />
         </p>
         <div className="hero__tags">
           <span className="hero__tag">
@@ -48,15 +47,15 @@ export default function Hero() {
           </span>
           <span className="hero__tag">
             <i className="fas fa-check-circle"></i>
-            Real-Client Experience
+            Client Project Experience
           </span>
           <span className="hero__tag">
             <i className="fa-solid fa-user-graduate"></i>
-            B.S. Business Management
+            B.S. in Business Management
           </span>
           <span className="hero__tag">
             <i className="fas fa-code"></i>
-            Full Stack Certified
+            Certified Full-Stack Developer
           </span>
         </div>
         <div className="hero__cta">

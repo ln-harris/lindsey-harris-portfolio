@@ -11,7 +11,7 @@ export default function Certifications() {
         <span className="section-label">Credentials</span>
         <h2 className="section-title">Certifications</h2>
         <p className="section-subtitle">
-          Verified skills completed at{" "}
+          Certificates earned at{" "}
           <a
             href="https://www.tripleten.com"
             target="_blank"
@@ -32,7 +32,7 @@ export default function Certifications() {
           <div className="cert-image">
             <img
               src={fullStackCertificate}
-              alt="Full Stack Developer Certificate"
+              alt="Full-Stack Developer Certificate"
             />
           </div>
           <div className="cert-content">
@@ -80,7 +80,7 @@ export default function Certifications() {
           <div className="cert-image">
             <img
               src={completionCertificateImage}
-              alt="Lindsey Harris Certificate of Completion"
+              alt="Lindsey Harris's Certificate of Completion"
             />
           </div>
           <div className="cert-content">

@@ -300,7 +300,7 @@ export default function Projects() {
             <h3 className="project__title">WTWR</h3>
             <p className="project__description">
               WTWR, short for "What to Wear," is a weather-based clothing app
-              that shows the current temperature htmlFor a user's location and
+              that shows the current temperature for a user's location and
               suggests clothing based on hot, warm, or cold conditions through a
               clean React interface.
             </p>
@@ -407,9 +407,8 @@ export default function Projects() {
           <div className="project__content">
             <h3 className="project__title">Spots</h3>
             <p className="project__description">
-              A social media image sharing app with a clean, responsive
-              interface that lets users explore, upload, and interact with
-              visual content.
+              A social media app with a clean, responsive interface for
+              exploring, uploading, and interacting with images.
             </p>
             <div className="project__tech">
               <span className="tech-tag html">HTML5</span>

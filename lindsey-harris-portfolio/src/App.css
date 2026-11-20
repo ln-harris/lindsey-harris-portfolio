@@ -1,0 +1,10 @@
+.page {
+  position: relative;
+  z-index: 1;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+html {
+  scroll-padding-top: 80px;
+}

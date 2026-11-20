@@ -69,7 +69,7 @@ export default function Contact() {
     <section id="contact" className="contact">
       <div className="contact__container animate-on-scroll">
         <div className="contact__content">
-          <span className="section-label">Get In Touch</span>
+          <span className="section-label">Get in Touch</span>
           <h2 className="contact__title">Let's Build Something Amazing</h2>
           <p className="contact__text">
             I'm currently open to new opportunities and exciting projects.

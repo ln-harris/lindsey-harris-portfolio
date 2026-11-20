@@ -12,13 +12,13 @@ export default function About() {
         <div className="about-me__content">
           <div className="about-me__text">
             <p className="intro-paragraph">
-              Hello — I'm <span className="highlight">Lindsey</span>. Problem
-              solving and curiosity drive everything I do.
+              Hello, I'm <span className="highlight">Lindsey</span>. Problem-solving
+              and curiosity drive everything I do.
             </p>
 
             <p>
-              I graduated in 2020 with a Bachelors of Science in Business
-              Management at CCSU, during the start of the pandemic. Instead of
+              At the start of the pandemic in 2020, I graduated from CCSU with
+              a Bachelor of Science in Business Management. Instead of
               waiting for opportunity, I built my own. I taught myself
               technical analysis, learned to interpret complex data, and shared
               my process on YouTube. After offering data analysis education and
@@ -34,21 +34,20 @@ export default function About() {
               analytical thinking, client experience, and hands-on software
               development. I had always coded for fun, but eventually
               realized the{" "}
-              <span className="highlight">daily problem solving</span> I enjoy
-              as an analyst was similar thinking to a developer. It's not just
-              about fixing a problem but{" "}
+              <span className="highlight">daily problem-solving</span> I enjoy
+              as an analyst also drew me to software development. In both roles,
+              I enjoy finding solutions and{" "}
               <span className="highlight">
                 planning ahead to prevent future problems
               </span>
-              . This applies perfectly to both data-driven decision making and
-              software development.
+              .
             </p>
 
             <p>
               I committed fully and completed{" "}
               <span className="highlight">TripleTen's Full-Stack program</span>,
               spending <span className="highlight">1,800+ hours</span> coding
-              and building real applications. I’m ready to contribute to a team,
+              and building real applications. I'm ready to contribute to a team,
               continue learning, and solve real-world problems through software.
             </p>
 
@@ -82,7 +81,7 @@ export default function About() {
                   <span className="code-property">passion</span>:{" "}
                   <span className="code-string">'problem-solving'</span>,{"\n  "}
                   <span className="code-property">commitment</span>:{" "}
-                  <span className="code-string">'1800+ hours'</span>,{"\n  "}
+                  <span className="code-string">'1,800+ hours'</span>,{"\n  "}
                   <span className="code-property">focus</span>:{" "}
                   <span className="code-string">'clean, practical code'</span>,{"\n  "}
                   <span className="code-function">buildFuture</span>:{" "}

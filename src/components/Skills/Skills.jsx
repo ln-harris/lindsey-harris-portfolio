@@ -120,7 +120,7 @@ export default function Skills() {
               <span className="skill-dot"></span>Vite
             </li>
             <li>
-              <span className="skill-dot"></span>NPM
+              <span className="skill-dot"></span>npm
             </li>
             <li>
               <span className="skill-dot"></span>Postman

@@ -9,6 +9,11 @@
     max-width: 100%;
   }
 
+  .rotating-word {
+    min-width: 0;
+    text-align: center;
+  }
+
   .hero__cta,
   .hero__tags,
   .hero__social {
@@ -115,6 +120,14 @@
 
   .hero__title {
     font-size: 2.5rem;
+  }
+
+  .hero__cta {
+    flex-wrap: wrap;
+  }
+
+  .contact {
+    padding: 1.5rem;
   }
 
   .btn {
